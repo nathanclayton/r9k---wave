@@ -1,0 +1,10 @@
+application: r9kwave
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /_wave/.*
+  script: r9kwave.py
+- url: /assets
+  static_dir: assets
